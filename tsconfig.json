@@ -1,5 +1,11 @@
 {
   "files": [],
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "types": [
+      "./node_modules/user-agent-data-types"
+    ]
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }

@@ -9,7 +9,7 @@ import Carousel from './components/Carousel.vue'
 <template>
   <Heading />
   <div class="flex flex-col items-center gap-3 p-2">
-    <carousel class="max-w-[80vw]" />
+    <carousel class="w-[80vw]" />
     <div class="p-3 text-xl font-bold">Features</div>
     <Features />
     <SponsorLinks />

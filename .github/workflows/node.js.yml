@@ -37,4 +37,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-           folder: dist
+          repository-name: TomBebb/gami
+          branch: 'gh-pages'
+          folder: dist
+          ssh-key: ${{ secrets.DEPLOY_KEY }}

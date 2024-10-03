@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useAsyncState, useFetch } from '@vueuse/core'
+import { useAsyncState } from '@vueuse/core'
 import { getLatestLink } from '../common/github'
 
-const linkData = useAsyncState(getLatestLink).state
+const linkData = useAsyncState(getLatestLink, '').state
 </script>
 
 <template>

@@ -27,7 +27,9 @@ const userAgentCodes: Record<string, Platform> = {
 export async function getLatestLink(): Promise<string> {
   const latestRel = await getLatest()
   let myPlatform: Platform | undefined
+  // @ts-ignore
   if (navigator?.userAgentData?.platform)
+    // @ts-ignore
     myPlatform = userAgentCodes[navigator.userAgentData!.platform]
   else if (navigator.platform === 'Linux x86_64') {
     myPlatform = 'linux'

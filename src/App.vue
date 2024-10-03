@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import DownloadButton from './components/DownloadButton.vue'
 import SponsorLinks from './components/SponsorLinks.vue'
+import Heading from './components/Heading.vue'
 </script>
 
 <template>
+  <Heading />
   <SponsorLinks />
   <button class="btn" @click="count++">+</button>
   <div>

@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 import DownloadButton from './components/DownloadButton.vue'
+import SponsorLinks from './components/SponsorLinks.vue'
 </script>
 
 <template>
+  <SponsorLinks />
   <button class="btn" @click="count++">+</button>
   <div>
     <a href="https://vitejs.dev" target="_blank"> </a>
@@ -11,7 +12,6 @@ import DownloadButton from './components/DownloadButton.vue'
       <img src="/public/icon.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 
   <DownloadButton />
 </template>
